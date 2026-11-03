@@ -1,4 +1,4 @@
-# 🍯 Honey Bears Bakery — Website Project
+#  Honey Bears Bakery — Website Project
 **Student Name:**Karabo Mamalema Tema
 **Student Number:**ST10513531
 **Module Code:** WEDE5020
