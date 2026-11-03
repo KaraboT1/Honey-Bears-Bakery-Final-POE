@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Order enquiry form — request custom cakes, bulk orders, or special items from Honey Bears Bakery Johannesburg.">
+    <meta name="keywords" content="order bakery, custom cake order, enquiry form, Honey Bears Bakery orders">
+    <title>Enquiries & Orders — Honey Bears Bakery</title>
+    <link rel="stylesheet" href="css_assets/styles.css">
+</head>
+<body>
+    <!-- Standard navigation bar -->
+    <header>
+        <img src="_images/Honey Bears Bakery final.jpg" alt="Honey Bears Bakery Logo" loading="lazy" style="max-width: 100%; height: auto;">
+        <h1>Honey Bears Bakery</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Our Services</a></li>
+                <li><a href="enquiries.html" class="active">Enquiries & Orders</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Enquiry form: collects customer details and order info -->
+    <main>
+        <h2>Place an Enquiry or Order</h2>
+        <p>If you have any questions, custom cake orders, or would like to place an order, please fill out the form below:</p>
+
+        <form id="enquiry-form" action="#" method="POST">
+            <label for="fullname">Your Full Name *</label>
+            <input type="text" id="fullname" name="fullname" required placeholder="Enter your first and last name">
+
+            <label for="email">Your Email Address *</label>
+            <input type="email" id="email" name="email" required placeholder="your@email.com">
+
+            <label for="phone">Your Phone Number *</label>
+            <input type="tel" id="phone" name="phone" required placeholder="+27 ...">
+
+            <label for="product">Product / Service Interested In *</label>
+            <select id="product" name="product" required>
+                <option value="">— Please select an option —</option>
+                <option value="honey-bread">Honey Bread & Breads</option>
+                <option value="cakes">Custom Celebration Cake</option>
+                <option value="pastries">Pastries & Treats</option>
+                <option value="cupcakes">Cupcakes & Small Treats</option>
+                <option value="bulk">Bulk / Function Order</option>
+                <option value="other">Other / Mixed Order</option>
+            </select>
+
+            <label>Order Preference *</label>
+            <label style="display: inline; margin-right: 1rem;">
+                <input type="radio" name="order-type" value="collection" required> Collection
+            </label>
+            <label style="display: inline;">
+                <input type="radio" name="order-type" value="delivery"> Delivery (Johannesburg only)
+            </label>
+
+            <label for="details">Order Details / Special Instructions</label>
+            <textarea id="details" name="details" rows="5" placeholder="Tell us about your order — flavours, quantities, dates, dietary requirements..."></textarea>
+
+            <label style="margin-top: 1rem;">
+                <input type="checkbox" id="terms" name="terms" required>
+                I confirm all details are correct and I'm over 18 years old *
+            </label>
+
+            <button type="submit">Submit Enquiry</button>
+
+            <div id="enquiry-success" class="success-msg" style="display: none;">
+                 Thank you! Your enquiry has been received. We will get back to you within 24 hours.
+            </div>
+            <div id="enquiry-error" class="error-msg" style="display: none;"></div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Honey Bears Bakery. All rights reserved.</p>
+    </footer>
+
+    <script src="js_assets/script.js"></script>
+</body>
+</html>

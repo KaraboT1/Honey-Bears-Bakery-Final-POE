@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Our baked goods — honey bread, pastries, custom cakes, cupcakes. Full price list and gallery from Honey Bears Bakery Johannesburg.">
+    <meta name="keywords" content="bakery products, honey bread, pastries, custom cakes, cupcakes, bakery prices Johannesburg">
+    <title>Our Services — Honey Bears Bakery</title>
+    <link rel="stylesheet" href="css_assets/styles.css">
+</head>
+<body>
+    <!-- Navigation bar links all 5 pages together -->
+    <header>
+        <img src="_images/Honey Bears Bakery final.jpg" alt="Honey Bears Bakery Logo" loading="lazy" style="max-width: 100%; height: auto;">
+        <h1>Honey Bears Bakery</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html" class="active">Our Services</a></li>
+                <li><a href="enquiries.html">Enquiries & Orders</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Our Baked Goods & Prices</h2>
+        <p>We offer a wide range of baked goods and services to meet your needs. Search below to find what you're looking for:</p>
+
+        <!-- Search / Filter Feature -->
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search our products..." aria-label="Search products">
+        </div>
+
+        <!-- Product List -->
+        <div id="products-list">
+            <h3>Breads & Rolls</h3>
+            <img src="_images/fresh bread.jpg" alt="Freshly baked loaves of honey bread cooling on a wooden rack" loading="lazy">
+            <ul class="product-items">
+                <li class="product-item"><strong>Honey Whole Wheat Bread</strong> — R42.00</li>
+                <li class="product-item"><strong>White Farm Bread</strong> — R38.00</li>
+                <li class="product-item"><strong>Mini Dinner Rolls (6 pack)</strong> — R15.00</li>
+            </ul>
+
+            <h3>Pastries & Treats</h3>
+            <img src="_images/pastries.jpg" alt="Assorted buttery pastries, cinnamon swirls and fruit tarts displayed together" loading="lazy">
+            <ul class="product-items">
+                <li class="product-item"><strong>Butter Scones</strong> — R8.00 each</li>
+                <li class="product-item"><strong>Cinnamon Swirls</strong> — R12.00 each</li>
+                <li class="product-item"><strong>Jam & Cream Tarts</strong> — R10.00 each</li>
+            </ul>
+
+            <h3>Cakes & Celebration Treats</h3>
+            <img src="_images/cakes.jpg" alt="Chocolate, vanilla and custom celebration cakes beautifully decorated" loading="lazy">
+            <ul class="product-items">
+                <li class="product-item"><strong>Chocolate Fudge Cake</strong> — From R210.00</li>
+                <li class="product-item"><strong>Vanilla Sponge Cake</strong> — From R180.00</li>
+                <li class="product-item"><strong>Custom Themed Cakes</strong> — Price on request</li>
+            </ul>
+        </div>
+
+        <!-- Gallery with Lightbox -->
+        <h3>Our Gallery</h3>
+        <p>Click any image to view larger:</p>
+        <div class="gallery-grid">
+            <img src="_images/fresh bread.jpg" alt="Fresh honey bread loaves" class="gallery-thumb" loading="lazy">
+            <img src="_images/pastries.jpg" alt="Assorted homemade pastries" class="gallery-thumb" loading="lazy">
+            <img src="_images/cakes.jpg" alt="Custom celebration cakes" class="gallery-thumb" loading="lazy">
+            <img src="_images/treats and cakes.jpg" alt="Cupcakes and sweet treats" class="gallery-thumb" loading="lazy">
+        </div>
+
+        <!-- Lightbox Overlay -->
+        <div id="lightbox" class="lightbox">
+            <span class="close-btn">&times;</span>
+            <img id="lightbox-img" alt="Enlarged bakery photo">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Honey Bears Bakery. All rights reserved.</p>
+    </footer>
+
+    <script src="js_assets/script.js"></script>
+</body>
+</html>

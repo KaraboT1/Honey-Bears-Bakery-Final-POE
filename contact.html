@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Honey Bears Bakery — address, trading hours, phone, email and contact form. Based in Randburg, Johannesburg.">
+    <meta name="keywords" content="contact bakery Johannesburg, bakery address, trading hours, Honey Bears Bakery contact">
+    <title>Contact Us — Honey Bears Bakery</title>
+    <link rel="stylesheet" href="css_assets/styles.css">
+</head>
+<body>
+    <!-- Header Section: Keeps navigation consistent across the whole site -->
+    <header>
+        <img src="_images/Honey Bears Bakery final.jpg" alt="Honey Bears Bakery Logo" loading="lazy" style="max-width: 100%; height: auto;">
+        <h1>Honey Bears Bakery</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Our Services</a></li>
+                <li><a href="enquiries.html">Enquiries & Orders</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contact Honey Bears Bakery</h2>
+        <p>We'd love to hear from you! Please feel free to reach out to us with any questions or feedback.</p>
+
+        <h3>Get In Touch</h3>
+        <p><strong>Physical Address:</strong><br>
+        56 Willow Street<br>
+        Randburg<br>
+        Johannesburg, 2199</p>
+
+        <p><strong>Trading Hours:</strong><br>
+        Monday – Friday: 06:30 – 17:00<br>
+        Saturday: 07:00 – 14:00<br>
+        Sunday & Public Holidays: Closed</p>
+
+        <p><strong>Contact Information:</strong><br>
+        Email: cakes@honeybearsbakery.co.za<br>
+        WhatsApp: 079 183 9682<br>
+        Phone: 082 671 2307</p>
+
+        <!-- Google Map -->
+        <div class="map-container">
+            <h3>Find Us On The Map</h3>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d231542.9623901369!2d27.94440245!3d-26.10191765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95c210a3d27b6d%3A0x6a5c5e4f3d2c1b0a!2sRandburg%2C%20Johannesburg!5e0!3m2!1sen!2sza!4v1730570000000!5m2!1sen!2sza" 
+                width="100%" 
+                height="350" 
+                style="border:0; border-radius: 0.75rem;" 
+                allowfullscreen="" 
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <!-- Contact Form -->
+        <h3>Send Us A Message</h3>
+        <form id="contact-form" action="#" method="POST">
+            <label for="name">Your Full Name *</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+            <label for="email">Your Email Address *</label>
+            <input type="email" id="email" name="email" required placeholder="your@email.com">
+
+            <label for="subject">Subject *</label>
+            <select id="subject" name="subject" required>
+                <option value="">— Select a topic —</option>
+                <option value="general">General Enquiry</option>
+                <option value="order">Order Query</option>
+                <option value="feedback">Feedback</option>
+                <option value="wholesale">Wholesale / Bulk Enquiry</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="message">Your Message *</label>
+            <textarea id="message" name="message" rows="5" required placeholder="How can we help you?"></textarea>
+
+            <button type="submit">Send Message</button>
+
+            <div id="contact-success" class="success-msg" style="display: none;">
+                 Message sent successfully! We'll get back to you as soon as possible.
+            </div>
+            <div id="contact-error" class="error-msg" style="display: none;"></div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Honey Bears Bakery. All rights reserved.</p>
+    </footer>
+
+    <script src="js_assets/script.js"></script>
+</body>
+</html>
